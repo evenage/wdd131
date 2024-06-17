@@ -1,16 +1,18 @@
-/* temples-large.css */
-
+/* Larger screen styling */
 @media (min-width: 800px) {
     header .hamburger {
-        display: none;
+        display: none; /* Hide hamburger menu on larger screens */
     }
 
     header .nav-menu {
-        display: flex;
+        display: flex; /* Show menu by default on larger screens */
+        flex-direction: row; /* Arrange items horizontally */
+        justify-content: center;
+        width: 100%;
     }
 
     header .nav-menu li {
-        margin: 0 1rem;
+        margin: 0 1rem; /* Add space between menu items */
     }
 
     main {
@@ -22,4 +24,12 @@
     figure {
         margin: 0;
     }
+
+    footer {
+        position: static;
+    }
 }
+
+
+}
+

@@ -1,5 +1,6 @@
 /* temples.css */
 
+/* General styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,6 +9,7 @@ body {
     color: #333;
 }
 
+/* Mobile-first styling */
 header {
     background: #333;
     color: white;
@@ -34,7 +36,12 @@ header .hamburger {
 header .nav-menu {
     list-style: none;
     padding: 0;
-    display: none;
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column; /* Stack items vertically on mobile */
+}
+
+header .nav-menu.show {
+    display: flex; /* Show menu when toggled */
 }
 
 header .nav-menu li {
@@ -46,6 +53,7 @@ header .nav-menu li a {
     text-decoration: none;
 }
 
+/* Main content styles */
 main {
     max-width: 600px;
     margin: 0 auto;
@@ -68,6 +76,7 @@ figure img {
     margin-bottom: 1rem;
 }
 
+/* Footer styles */
 footer {
     background: #333;
     color: white;
