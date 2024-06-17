@@ -1,0 +1,25 @@
+/* temples-large.css */
+
+@media (min-width: 800px) {
+    header .hamburger {
+        display: none;
+    }
+
+    header .nav-menu {
+        display: flex;
+    }
+
+    header .nav-menu li {
+        margin: 0 1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    figure {
+        margin: 0;
+    }
+}
