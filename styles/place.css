@@ -19,7 +19,7 @@ body {
 /* Header styles */
 header {
     background: var(red, green);
-    color: var(--white);
+    color: var(red);
     padding: 1rem;
     text-align: center;
     position: relative;
@@ -121,7 +121,7 @@ header {
 /* Footer styles */
 footer {
     background: var(rgb(6, 75, 6));
-    color: var(--white);
+    color: var(blue);
     text-align: center;
     padding: 1rem;
 }
