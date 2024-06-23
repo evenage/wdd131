@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Place</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 800px)">
+    <script src="scripts/place.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>South Africa</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 400px)" srcset="images/hero-medium.webp">
+                <img src="images/lion.webp" alt="Beautiful animal">
+            </picture>
+        </section>
+        <section class="content">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 1,221,037km²</li>
+                <li><strong>Population:</strong> 59.89 million</li>
+                <li><strong>Capital:</strong> Pretoria</li>
+                <li><strong>Languages:</strong> Xhlosa, Zulu, English</li>
+                <li><strong>Currency:</strong>Rand</li>
+                <li><strong>Timezone:</strong> SAST (UTC+2)</li>
+                <li><strong>Calling Code:</strong> +27</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">15°C</span></li>
+                <li><strong>Conditions:</strong> <span id="conditions">Partly Cloudy</span></li>
+                <li><strong>Wind:</strong> <span id="windSpeed">10 km/h</span></li>
+                <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="">©2024</span>💕 EVENAGE THELMA GORWA 💕Zimbabwe💕</p>
+        <p id="lastModified:23/06/2025 01:11"></p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+</html>

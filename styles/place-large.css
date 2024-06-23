@@ -1,0 +1,31 @@
+/* place-large.css */
+
+@media (min-width: 800px) {
+    header nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 0 1rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .content, .weather {
+        max-width: 800px;
+    }
+
+    footer {
+        position: static;
+    }
+
+    .weather .weather-icon {
+        display: inline;
+    }
+}
