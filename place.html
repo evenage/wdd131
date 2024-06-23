@@ -19,11 +19,11 @@
     </header>
     <main>
         <section class="hero">
-            <picture>
-                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
-                <source media="(min-width: 400px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-lion.webp" alt="Country Hero Image">
-            </picture>
+            <img 
+                src="images/hero-small.jpg" 
+                srcset="images/hero-small.jpg 400px, images/hero-medium.jpg 800px, images/hero-large.jpg 1800w" 
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                alt="Hero Image">
         </section>
         <section class="content">
             <h2>Data</h2>
@@ -48,6 +48,7 @@
             </ul>
         </section>
     </main>
+    </body>
     <footer>
         <p>&copy; <span id="©2024"></span>💕 EVENAGE THELMA GORWA 💕Zimbabwe💕</p>
         <p id="lastModified"></p>
