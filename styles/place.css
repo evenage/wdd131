@@ -2,10 +2,9 @@
 
 /* General styles */
 :root {
-    --primary-color: #333;
-    --secondary-color: #f4f4f4;
-    --text-color: #333;
-    --white: white;
+    --primary-color: #0e0c91;
+    --secondary-color: #0adf1c;
+    --text-color: #f82d09;
 }
 
 body {
@@ -68,8 +67,6 @@ header {
 .weather {
     padding: 1rem;
     background-color: var(--white);
-    border: 1px solid #ccc;
-    border-radius: 8px;
 }
 
 .weather h2 {
@@ -94,7 +91,6 @@ header {
 .weather ul li {
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
 }
 
 .weather ul li:last-child {
