@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Place</title>
+    <title>Country places</title>
     <meta name="description" content="Country.">
     <meta name="author" content="Evenage Thelma Gorwa">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 800px)">
     <script src="scripts/place.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>South Africa</h1>
+        <h1>South Africa Infomation</h1>
     </header>
     <main>
         <section class="hero">
-            <img 
-                src="images/hero-small.webp" 
-                srcset="images/hero-small.webp 400px, images/hero-medium.webp 800px, images/hero-large.jpg 1800w" 
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                alt="Lion">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 800px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Beautiful Animal of South Africa">
+            </picture>
         </section>
-        <section class="content">
+        <section class="info">
             <h2>Data</h2>
             <ul>
-                <li><strong>Area:</strong> 1,221,037km²</li>
-                <li><strong>Population:</strong> 59.89 million</li>
-                <li><strong>Capital:</strong> Pretoria</li>
-                <li><strong>Languages:</strong> Xhlosa, Zulu, English</li>
-                <li><strong>Currency:</strong>Rand</li>
+                <li><strong>Area:</strong> 1,221,037 km²</li>
+                <li><strong>Population:</strong> 59 million</li>
+                <li><strong>Capital:</strong> Pretoria (administrative), Bloemfontein (judicial), Cape Town (legislative)</li>
+                <li><strong>Languages:</strong> 11 official languages including Zulu, Xhosa, Afrikaans, and English</li>
+                <li><strong>Currency:</strong> South African Rand (ZAR)</li>
                 <li><strong>Timezone:</strong> SAST (UTC+2)</li>
                 <li><strong>Calling Code:</strong> +27</li>
-                <li><strong>Internet TLD:</strong> .mg</li>
+                <li><strong>Internet TLD:</strong> .za</li>
             </ul>
         </section>
         <section class="weather">
-            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <h2>Weather ⛅</h2>
+            <div class="weather-icon">
+                <img src="images/icon.svg" alt="Weather Icon">
+            </div>
             <ul>
-                <li><strong>Temperature:</strong> <span id="temperature">15°C</span></li>
-                <li><strong>Conditions:</strong> <span id="conditions">Partly Cloudy</span></li>
-                <li><strong>Wind:</strong> <span id="windSpeed">10 km/h</span></li>
+                <li><strong>Temperature:</strong> 15°C</li>
+                <li><strong>Conditions:</strong> Partly cloud</li>
+                <li><strong>Wind:</strong> 10 km/h</li>
                 <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
             </ul>
         </section>

@@ -2,17 +2,21 @@
 
 /* General styles */
 :root {
-    --primary-color: #333;
-    --secondary-color: #f4f4f4;
+    --primary-color: #007847; /* Green */
+    --secondary-color: #ffb612; /* Yellow */
+    --accent-color: #de3831; /* Red */
+    --background-color: #f4f4f4; /* Light Gray */
     --text-color: #333;
-    --white: white;
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #002395; /* Blue */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
@@ -23,28 +27,6 @@ header {
     padding: 1rem;
     text-align: center;
     position: relative;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header nav ul li {
-    margin: 0.5rem 0;
-}
-
-header nav ul li a {
-    color: var(--white);
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-header nav ul li a:hover {
-    background: #555;
 }
 
 /* Hero section styles */
@@ -62,7 +44,7 @@ header nav ul li a:hover {
 .info {
     padding: 1rem;
     background-color: var(--white);
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-color);
     margin: 1rem;
     border-radius: 8px;
 }
@@ -81,7 +63,7 @@ header nav ul li a:hover {
 .info ul li {
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .info ul li:last-child {
@@ -92,9 +74,10 @@ header nav ul li a:hover {
 .weather {
     padding: 1rem;
     background-color: var(--white);
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-color);
     margin: 1rem;
     border-radius: 8px;
+    position: relative;
 }
 
 .weather h2 {
@@ -102,8 +85,13 @@ header nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
-.weather .weather-icon {
-    display: none;
+.weather::after {
+    content: "⛅"; /* Weather icon for large view */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    display: none; /* Hidden by default, shown in large view */
 }
 
 .weather ul {
@@ -146,5 +134,28 @@ footer {
     width: 100%;
     bottom: 0;
 }
-85
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .hero img {
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1024px) {
+    .weather .weather-icon {
+        display: block;
+    }
+
+    .weather::after {
+        display: block;
+    }
+
+    .info, .weather, .content {
+        margin: 2rem auto;
+        max-width: 800px;
+    }
+}
+
 
