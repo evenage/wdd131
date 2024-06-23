@@ -44,9 +44,7 @@ header {
 .info {
     padding: 1rem;
     background-color: var(--white);
-    border: 1px solid var(--primary-color);
     margin: 1rem;
-    border-radius: 8px;
 }
 
 .info h2 {
@@ -63,20 +61,15 @@ header {
 .info ul li {
     margin:  0;
     padding: 0.5rem;
-    border-bottom: none;
 }
 
-.info ul li:last-child {
-    border-bottom: none;
-}
+
 
 /* Weather section styles */
 .weather {
     padding: 1rem;
     background-color: var(--white);
-    border: 1px solid var(--primary-color);
     margin: 1rem;
-    border-radius: 8px;
     position: relative;
 }
 
@@ -103,12 +96,8 @@ header {
 .weather ul li {
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border-bottom: none;
 }
 
-.weather ul li:last-child {
-    border-bottom: none;
-}
 
 /* Content section styles */
 .content {
@@ -129,9 +118,7 @@ footer {
     background: var(--primary-color);
     color: var(--white);
     text-align: center;
-    padding: 1rem;
     position: fixed;
-    width: 100%;
     bottom: 0;
 }
 
