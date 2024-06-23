@@ -3,15 +3,24 @@
 /* General styles */
 :root {
     --primary-color: #0e0c91;
-    --secondary-color: #0adf1c;
+    --secondary-color: white;
     --text-color: #f82d09;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 5rem;
     padding: 0;
     background-color: var(--secondary-color);
     color: var(--text-color);
+}
+
+
+/* Footer styles */
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
 }
 
