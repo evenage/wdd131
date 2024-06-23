@@ -18,8 +18,8 @@ body {
 
 /* Header styles */
 header {
-    background: var(red, green);
-    color: var(red);
+    background: var(red,);
+    color: var(green);
     padding: 1rem;
     text-align: center;
     position: relative;
