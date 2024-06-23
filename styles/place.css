@@ -41,13 +41,11 @@ header {
     padding: 1rem;
     background-color: var(--white);
     border: 1px solid #2f0bcf;
-    margin: 1rem;
     border-radius: 8px;
 }
 
 .info h2 {
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 .info ul {
@@ -57,8 +55,8 @@ header {
 }
 
 .info ul li {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
+    margin: 0;
+    padding: 0;
     border-bottom: 1px solid #f0cd07;
 }
 
@@ -71,7 +69,6 @@ header {
     padding: 1rem;
     background-color: var(--white);
     border: 1px solid #ccc;
-    margin: 1rem;
     border-radius: 8px;
 }
 
