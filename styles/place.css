@@ -103,7 +103,7 @@ header {
 .weather ul li {
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: none;
 }
 
 .weather ul li:last-child {
@@ -129,7 +129,7 @@ footer {
     background: var(--primary-color);
     color: var(--white);
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
