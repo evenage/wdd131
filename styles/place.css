@@ -129,7 +129,7 @@ footer {
     background: var(--primary-color);
     color: var(--white);
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     position: fixed;
     width: 100%;
     bottom: 0;
