@@ -2,19 +2,139 @@
 
 /* General styles */
 :root {
-    --primary-color: #0e0c91;
-    --secondary-color: white;
-    --text-color: #f82d09;
+    --primary-color: #333;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --white: white;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 5rem;
+    margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
     color: var(--text-color);
 }
 
+/* Header styles */
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0.5rem 0;
+}
+
+header nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+header nav ul li a:hover {
+    background: #555;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Information section styles */
+.info {
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.info h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.info ul li:last-child {
+    border-bottom: none;
+}
+
+/* Weather section styles */
+.weather {
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.weather h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.weather .weather-icon {
+    display: none;
+}
+
+.weather ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.weather ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.weather ul li:last-child {
+    border-bottom: none;
+}
+
+/* Content section styles */
+.content {
+    padding: 1rem;
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    text-align: justify;
+}
 
 /* Footer styles */
 footer {
@@ -22,5 +142,9 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
+85
 
