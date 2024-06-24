@@ -121,6 +121,7 @@ footer {
     position: fixed;
     bottom: 0;
     padding: 1rem;
+    width: 100%;
 }
 
 /* Media Queries */
