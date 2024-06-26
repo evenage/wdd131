@@ -18,14 +18,15 @@ function updateLastModified() {
 
 // Function to toggle the navigation menu
 function toggleMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    if (navMenu) {
-        navMenu.classList.toggle('show');
+    const hamButton  = document.querySelector('#menu');
+    const navigation =
+    document.querySelector('.navigation');
     }
-}
 
-// Event listener for the hamburger button
-document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+hamButton.addEventListener('click', () => {
+    navMenu.classlist.toggle('show');
+    hamButton.classlist.toggle('open');
+});
 
 // Call the functions to update the dates
 updateCurrentYear();

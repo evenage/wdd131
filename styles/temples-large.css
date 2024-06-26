@@ -4,19 +4,20 @@
         display: none; /* Hide hamburger menu on larger screens */
     }
 
-    header .nav-menu {
-        display: flex; /* Show menu by default on larger screens */
-        flex-direction: row; /* Arrange items horizontally */
-        justify-content: center;
-        width: 100%;
+    nav ul{
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
-    header .nav-menu li {
-        margin: 0 1rem; /* Add space between menu items */
+    nav a {
+        flex: 1 1 100%;
     }
+
+    nav ul li {
+        margin: 0 1rem;
 
     main {
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1rem;
     }

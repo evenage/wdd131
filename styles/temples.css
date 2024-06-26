@@ -13,45 +13,49 @@ body {
 header {
     background: #333;
     color: white;
-    padding: 1rem;
+    padding: 20px;
     text-align: center;
-    position: relative;
-}
-
-header nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-header .hamburger {
+.hamburger {
     font-size: 1.5rem;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
     display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
-header .nav-menu {
-    list-style: none;
-    padding: 0;
-    display: none; /* Hide menu by default on mobile */
-    flex-direction: column; /* Stack items vertically on mobile */
+nav {
+    background-color: aqua;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-header .nav-menu.show {
-    display: flex; /* Show menu when toggled */
+nav ul {
+    list-style-type: none;
 }
 
-header .nav-menu li {
-    margin: 0.5rem 0;
-}
-
-header .nav-menu li a {
-    color: white;
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
     text-decoration: none;
 }
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: yellow;
+}
+
 
 /* Main content styles */
 main {
