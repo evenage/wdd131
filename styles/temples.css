@@ -1,21 +1,28 @@
-/* temples.css */
+/* Global styles */
+:root {
+    --primary-color: #bbc71a;
+    --secondary-color: #f4f4f4;
+    --text-color: #095a07;
+    --hover-color: #555;
+}
 
-/* General styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Mobile-first styling */
 header {
-    background: #333;
+    background: var(--primary-color);
     color: white;
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
-    display: flex;
+    position: relative;
 }
 
 .hamburger {
@@ -30,60 +37,59 @@ header {
     right: 1rem;
 }
 
-nav {
-    background-color: aqua;
-    display: flex;
+nav ul {
+    display: none;
     flex-direction: column;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    list-style: none;
 }
 
+nav ul li {
+    margin: 0.5rem 0;
+}
 
-nav a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 1rem;
+nav ul li a {
+    color: rgb(14, 172, 22);
     text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline double;
+nav ul li a:hover {
+    background-color: var(--hover-color);
 }
 
-.active {
-    color: yellow;
-}
-
-
-/* Main content styles */
 main {
-    max-width: 600px;
+    flex: 1;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 figure {
     background: white;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 1rem 0;
+    border-radius: 8px;
     padding: 1rem;
     text-align: center;
 }
 
-figure img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-/* Footer styles */
 footer {
-    background: #333;
+    background: var(purple);
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
+
+/* Show the menu when hamburger is clicked */
+.show {
+    display: flex;
+}
+
