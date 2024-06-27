@@ -23,7 +23,7 @@ function toggleMenu() {
     document.querySelector('.navigation');
     }
 
-hamButton.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
     navMenu.classlist.toggle('show');
     hamButton.classlist.toggle('open');
 });

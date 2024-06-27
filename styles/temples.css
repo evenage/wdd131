@@ -36,9 +36,6 @@ nav {
     max-width: 800px;
 }
 
-nav ul {
-    list-style-type: none;
-}
 
 nav a {
     display: block;
