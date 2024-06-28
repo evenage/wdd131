@@ -1,33 +1,20 @@
-// temples.js
+document.addEventListener("DOMContentLoaded", () => {
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent= currentYear;
 
-// Function to update the current year
-function updateCurrentYear() {
-    const currentYearElement = document.getElementById('currentYear');
-    if (currentYearElement) {
-        currentYearElement.textContent = new Date().getFullYear();
-    }
-}
+    document.getElementById("lastModified").textContent= "Last Modified: " + document.lastModified;
 
-// Function to update the last modified date
-function updateLastModified() {
-    const lastModifiedElement = document.getElementById('lastModified');
-    if (lastModifiedElement) {
-        lastModifiedElement.textContent = 'Last Modified: ' + document.lastModified;
-    }
-}
-
-// Function to toggle the navigation menu
-function toggleMenu() {
-    const hamButton  = document.querySelector('#menu');
-    const navigation =
-    document.querySelector('.navigation');
-    }
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
 
     hamburger.addEventListener('click', () => {
-    navMenu.classlist.toggle('show');
-    hamButton.classlist.toggle('open');
+        navMenu.classList.toggle('show');
+        // Toggle between hamburger and 'X' icon
+        if (hamburger.textContent === '\u2630') {
+            hamburger.textContent = '\u2715';
+        } else {
+            hamburger.textContent = '\u2630';
+        }
+    });
 });
 
-// Call the functions to update the dates
-updateCurrentYear();
-updateLastModified();

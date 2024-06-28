@@ -22,7 +22,7 @@ body {
 
 /* Header styles */
 header {
-    background: var(--primary-color);
+    background: var(--accent-color);
     color: var(--white);
     padding: 1rem;
     text-align: center;
@@ -32,12 +32,8 @@ header {
 /* Hero section styles */
 .hero {
     text-align: center;
-    margin: 1rem 0;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
+    display: grid;
+    grid-gap: 2rem;
 }
 
 /* Information section styles */
@@ -68,7 +64,7 @@ header {
 /* Weather section styles */
 .weather {
     padding: 1rem;
-    background-color: var(--white);
+    background-color: var(--primary-color);
     margin: 1rem;
     position: relative;
 }
@@ -101,12 +97,12 @@ header {
 
 /* Content section styles */
 .content {
-    padding: 5rem;
+    padding: 20px;
 }
 
 .content h2 {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 0 auto;
 }
 
 .content p {
@@ -115,10 +111,10 @@ header {
 
 /* Footer styles */
 footer {
-    background: var(--primary-color);
-    color: var(--white);
+    background: var(--secondary-color);
+    color: var(--black);
     text-align: center;
-    padding: 1rem;
+    padding: o.2rem;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -127,8 +123,7 @@ footer {
 /* Media Queries */
 @media (min-width: 768px) {
     .hero img {
-        height: 400px;
-        object-fit: cover;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

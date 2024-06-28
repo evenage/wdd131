@@ -1,7 +1,7 @@
 /* Global styles */
 :root {
     --primary-color: #bbc71a;
-    --secondary-color: #181010;
+    --secondary-color: #0ea5c0;
     --text-color: #095a07;
     --hover-color: #555;
 }
@@ -12,8 +12,8 @@ body {
     padding: 0;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    display: flex;
     flex-direction: column;
+    display: flex;
     min-height: 100vh;
 }
 
@@ -56,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: green);
+    background-color: green;
 }
 
 main {
@@ -67,7 +67,7 @@ main {
 }
 
 .temple-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
@@ -78,7 +78,6 @@ figure {
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    display: flex;
 }
 
 footer {
@@ -87,7 +86,7 @@ footer {
     text-align: center;
     padding: 1rem;
     width: 100%;
-    
+
 }
 
 /* Show the menu when hamburger is clicked */
