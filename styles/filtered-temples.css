@@ -1,0 +1,169 @@
+/* Global styles */
+:root {
+    --primary-color: #bbc71a;
+    --secondary-color: #0ea5c0;
+    --text-color: #095a07;
+    --hover-color: #555;
+}
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+
+/* Other existing styles */
+
+/* Container for image and overlay */
+.img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* Image styles */
+.img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Overlay styles */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 8px;
+}
+
+/* Overlay text styles */
+.overlay-text {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Show overlay on hover */
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Adjust text styles for better readability */
+.overlay-text p {
+    margin: 0.5rem 0;
+}
+
+
+#hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: var(--white);
+    padding: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+nav button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.temple-card {
+    background: var(--white);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+/* Show the menu when hamburger is clicked */
+.show {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
