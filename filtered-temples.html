@@ -4,76 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filtered Temples</title>
-    <meta name="description" content="Temple Album pictures.">
+    <meta name="description" content="Album of Temple pictures done by Evenage Thelma Gorwa.">
     <meta name="author" content="Evenage Thelma Gorwa">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="http://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 800px)">
-    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 800px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1 class="title">Filtered Temples</h1>
-        <nav>
-            <button class="menuButton" aria-label="Menu Button"></button>
-            <ul class="nav-links flex">
-                <li><a href="home">Home</a></li>
-                <li><a href="old">Old</a></li>
-                <li><a href="new">New</a></li>
-                <li><a href="large">Large</a></li>
-                <li><a href="small">Small</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="res-grid">
-            <h2>Temples</h2>
-            <section class="imgbox flex">
-                <h3>Aba Nigeria</h3>
-                <p>
-                    <span clas="label">
-                        "location:"
-                        <span>Aba, Nigeria</span>
-                    </span>
-                </p>
-                <p>
-                    <span class="label">
-                        "Dedicated:"
-                        <span>2005, August, 7</span>
-                    </span>
-                </p>
-                <p>
-                    <span class="label">
-                        "Size:"
-                        <span>11500 sq ft</span>
-                    </span>
-                </p>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg" alt="Aba Nigeria Temple" loading="lazy" width="400" height="250">
-            </section>
-            <section class="imgBox flex">
-                <h3>Manti Utah</h3>
-                <p>
-                    <span class="label">
-                        "Location:"
-                        <span>Manti, Utah, United States</span>
-                    </span>
-                </p>
-                <p>
-                    <span class="label">
-                        "Dedicated:"
-                        <span>1888, May, 21</span>
-                    </span>
-                </p>
-                <p>
-                    <span class="label">
-                        "Size:"
-                        <span>74792 sq ft</span>
-                    </span>
-                </p>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg" alt="Manti-Utah Temple" loading="lazy" width="400" height="250">
-            </section>
+    <div id="content">
+        <header>
+            <h1>Temple Album</h1>
+            <button id="menu" type="button" aria-label="Navigation Menu"></button>
+            <nav class="nav">
+                <a class="home active">
+                    <p>Home</p>
+                </a>
+                <a class="old">
+                    <p>Old</p>
+                </a>
+                <a class="new">
+                    <p>New</p>
+                </a>
+                <a class="large">
+                    <p>Large</p>
+                </a>
+                <a class="small">
+                    <p>Small</p>
+                </a>
+            </nav>
+        </header>
+
+        <main>
+            <h2 id="title">Home</h2>
+            <div id="temple-album">
+                <section class="imgbox flex">
+                    <h3>Aba Nigeria</h3>
+                    <p>
+                        <span clas="label">
+                            "location:"
+                            <span>Aba, Nigeria</span>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="label">
+                            "Dedicated:"
+                            <span>2005, August, 7</span>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="label">
+                            "Size:"
+                            <span>11500 sq ft</span>
+                        </span>
+                    </p>
+                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg" alt="Aba Nigeria Temple" loading="lazy" width="400" height="250">
+                </section>
+                <section class="imgBox flex">
+                    <h3>Manti Utah</h3>
+                    <p>
+                        <span class="label">
+                            "Location:"
+                            <span>Manti, Utah, United States</span>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="label">
+                            "Dedicated:"
+                            <span>1888, May, 21</span>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="label">
+                            "Size:"
+                            <span>74792 sq ft</span>
+                        </span>
+                    </p>
+                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg" alt="Manti-Utah Temple" loading="lazy" width="400" height="250">
+                </section>
                 <section class="imgBox flex">
                     <h3>Payson Utah</h3>
                     <p>
@@ -205,35 +217,34 @@
                         </span>
                     <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/400x250/adelaide-australia-temple-lds-856093-wallpaper.jpg" alt="South Australia Temple" width="400" height="250">
                 </section>
-                <section>
                     <section class="imgBox flex">
-                        <h3>Albuquerque New Mexico</h3>
-                        <p>
-                            <span class="label">
-                                "Location:"
-                                <span>New Mexico</span>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="label">
-                                "Dedicated:"
-                                <span>2000, March,5</span>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="label">
-                                "Size:"
-                                <span>34245 sq ft</span>
-                            </span>
+                    <h3>Albuquerque New Mexico</h3>
+                    <p>
+                        <span class="label">
+                            "Location:"
+                            <span>New Mexico</span>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="label">
+                            "Dedicated:"
+                            <span>2000, March,5</span>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="label">
+                            "Size:"
+                        <span>34245 sq ft</span>
+                        </span>
                     <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/400x250/albuquerque-temple-lds-998219-wallpaper.jpg" alt="New Mexico Temple" width="400" height="250">
                 </section>
-                <section>
-                    <section class="imgBox flex">
-                        <h3>Bentonville-Arkansas</h3>
-                        <p>
-                            <span class="label">
-                                "Location:"
-                                <span>Arkansas</span>
+                <section class="imgBox flex">
+                    <h3>Bentonville-Arkansas</h3>
+                    <p>
+                        <span class="label">
+                            "Location:"
+                        <span>Arkansas</span>
+                        <span>Arkansas</span>
                             </span>
                         </p>
                         <p>
@@ -251,7 +262,7 @@
                 </section>
         </div>
     </main>
-    <footer>
+        <footer>
             <p>
                 <span id="currentYear">
                 <span class="highlight">"©2024"</span>
@@ -264,7 +275,8 @@
                     <span class="highlight">09/07/2024 02:05:01</span>
                 </span>
             </p>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
 

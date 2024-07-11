@@ -12,7 +12,7 @@
 
 /* Globals */
 html {
-    background-color: #508f91;
+    background-color: #4116a7;
 }
 
 h1 {
@@ -40,7 +40,7 @@ header {
     border: 0;
     color: #fff;
     cursor: pointer;
-    font-family: "Cousine", monospace;
+    font-family: "Roboto";
     font-size: 1.5rem;
     position: absolute;
     right: 1em;
@@ -64,7 +64,7 @@ header {
 }
 
 .nav a {
-    background-color: #1e5d5f;
+    background-color: #05292b;
     color: #fff;
     display: none;
     font-size: 1.4em;
