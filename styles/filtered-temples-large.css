@@ -1,11 +1,42 @@
-nav {
-    flex-direction: row;
-    justify-content: center;
+@media screen and (min-width: 900px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #menu {
+        display: none
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .nav a {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main {
+        min-height: 2543.280px;
+    }
+
+    #temple-album {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    figure {
+        max-width: 500px;
+    }
 }
 
-.res-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (min-width: 992px) {
+    main {
+        min-height: 1406.190px;
+    }
 }
+
 
 
 
