@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form ">
+    <meta name="author" content="Evenage Thelma Gorwa">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Product Review form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/form-getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header><h1>Product Review</h1>
+    </header>
+
+<main>
+    <form method="get" action="review.html" class="wf1">
+
+        <!-- Product Review fieldset-->
+        <fieldset class="no-border">
+            <label for="product">Product Name <span class=required>*</span> (required)</label>
+                <select id="product" name="product" required>
+                    <option value="">Choose a Product...</option>
+                </select>
+        </fieldset>
+
+        <!-- Overall Rating fieldset-->
+        
+        <fieldset class="no-border">
+            <div class="rating"> Overall Rating <span class="required">*</span> (required)</div>
+            <div class="rating-container"> 
+                <label>
+                    <span>&#9734;</span>
+                    <input type="radio" id="one-star" name="rating" value="1" required>
+                </label>
+                <label>
+                    <span>&#9734; &#9734;</span>
+                    <input type="radio" id="two-stars" name="rating" value="2" required>
+                </label>
+                <label>
+                    <span>&#9734; &#9734; &#9734;</span>
+                    <input type="radio" id="three-stars" name="rating" value="3" required>
+                </label>
+                <label>
+                    <span>&#9734; &#9734; &#9734; &#9734;</span>
+                    <input type="radio" id="four-stars" name="rating" value="4" required>
+                </label>
+                <label>
+                    <span>&#9734; &#9734; &#9734; &#9734; &#9734;</span>
+                    <input type="radio" id="five-stars" name="rating" value="5" required>
+                </label>
+            </div>
+        </fieldset>
+        <!-- Date of Installation fieldset-->
+
+    
+        <fieldset class="no-border">
+            <label>Date of Installation<span class=required>*</span> (required)
+            <input type="date" name="installation-date" required></label>
+        </fieldset>
+        
+        <!-- Checkbox fieldset-->
+
+        <fieldset class="no-border">
+            <div>Which features did you find useful in the product?</div>
+            <p class="checklist-italics">(Check all that apply)</p>
+            <label><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+            <label><input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
+            <label><input type="checkbox" id="design" name="features" value="design">Design</label>
+        </fieldset>
+
+        <!-- Written Review fieldset-->
+
+        <fieldset class="no-border">
+            <label id="written-review" >Written Review (Optional)
+            <textarea id="text-area" name="text-area" rows="4" cols="50" ></textarea></label>
+        </fieldset>
+
+        <!-- User Name fieldset-->
+
+        <fieldset class="no-border">
+            <label >Your Name (Optional)<input type="text" id="user-name" name="user-name" class="user-name"></label>
+        </fieldset>
+
+        <input type="submit" value="Post Review">
+    </form>
+</main>
+
+    <footer>
+        <p>
+            <span id="currentYear">
+            <span class="highlight">"©2024"</span>
+        </span>
+         "🎄EVENAGE THELMA GORWA 🎄 ZIMBABWE 🎄"
+        </p>
+        <p>
+            "Last Modified"
+            <span id="lastModified">
+                <span class="highlight">09/07/2024 02:05:01</span>
+            </span>
+        </p>
+    </footer> 
+
+</body>
+
+</html>

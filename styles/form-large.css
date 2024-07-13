@@ -1,0 +1,64 @@
+@media (min-width: 768px) {
+    header h1 {
+        width: 86%; 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+        
+    }
+
+    input[type="submit"] {
+        width:95%;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: -10px;
+        background-color: #00796b;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+
+    footer {
+        width: 86%;
+        margin-left: 51px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header h1 {
+        width: 63.4%; 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        width: 63.77%;
+        margin-left: 183px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    header h1 {
+        width: 45.3%; 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+    }
+
+    footer {
+        width: 45.3%;
+        margin-left: 389px;
+    }
+}
+
+@media (min-width: 2560px) {
+    header {
+        width: 56%; 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+    }
+
+    footer {
+        width: 25.2%;
+        margin-left: 950px;
+    }
+}

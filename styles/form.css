@@ -1,0 +1,235 @@
+/*----------- HEADER --------------*/
+
+
+
+header h1 {
+    background-color: white;
+    text-align: center;
+    color: #00796b;
+    width: 100%;
+}
+
+/*----------- BODY --------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    /* Adjust headings as needed */
+}
+
+p, label, input, select, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    /* Adjust text elements as needed */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #ffffff;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+}
+
+/* -----------FORM STYLING SECTION----------- */
+
+.no-border {
+    border: none;
+}
+
+fieldset {
+    display: block;
+    margin-bottom: 15px;
+    border-left: 5px solid #004d40; /* Darker teal accent */
+    padding-left: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #004d40;
+    
+}
+
+.rating {
+    color: #004d40; /* This targets <div> 'Overall Rating' */
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-container label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="date"], 
+input[type="radio"],
+input[type="text"],
+textarea,
+select,
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+fieldset label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    width:92%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -10px;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #005f56;
+    
+    
+}
+
+.checklist-italics {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color:  #e0f7fa;
+    color: black;
+
+}
+
+.footer-top, .footer-bottom  {
+    background-color: white;
+    margin: 0;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+}
+
+#reviewCount {
+    font-weight: bold;
+    color: #00796b;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.container h3 {
+    color: #51c50e;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container #reviewCount {
+    font-weight: bold;
+    color: #00796b;
+}
+
+.required {
+    color: rgb(20, 1, 1);
+    margin-left: 3px; /* Example: Adjust spacing between asterisk and text */
+}
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 320px) {
+    .rating-container {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    .rating-container label {
+        flex-basis: 50%; /* Make each label take 50% width */
+        box-sizing: border-box;
+        padding: 5px; /* Add padding to create spacing between items */
+        text-align: center; /* Center align the content */
+    }
+
+    .rating-container label input[type="radio"] {
+        margin-top: 5px; /* Adjust top margin for spacing */
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .rating-container {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    .rating-container label {
+        flex-basis: 50%; /* Make each label take 50% width */
+        box-sizing: border-box;
+        padding: 5px; /* Add padding to create spacing between items */
+        text-align: center; /* Center align the content */
+    }
+
+    .rating-container label input[type="radio"] {
+        margin-top: 5px; /* Adjust top margin for spacing */
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .rating-container {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    .rating-container label {
+        flex-basis: 50%; /* Make each label take 50% width */
+        box-sizing: border-box;
+        padding: 5px; /* Add padding to create spacing between items */
+        text-align: center; /* Center align the content */
+    }
+
+    .rating-container label input[type="radio"] {
+        margin-top: 5px; /* Adjust top margin for spacing */
+    }
+    
+}
