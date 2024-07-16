@@ -57,12 +57,6 @@ header {
     content: "X";
 }
 
-.nav {
-    background-color: inherit;
-    display: flex;
-    flex-direction: column;
-}
-
 .nav a {
     background-color: #05292b;
     color: #fff;
@@ -142,20 +136,12 @@ figcaption span {
     color: #000;
     word-spacing: -0.25em;
 }
-
-/* Footer */
+    
 footer {
-    background-color: #1e5d5f;
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-}
-
-footer p {
+    background-color:#1e5d5f ;
     color: white;
-    padding: 6px 0;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
 }
-
-#lastModified {
-    color: #ffffaf;
-}
+    
