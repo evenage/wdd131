@@ -1,5 +1,7 @@
 // getdates.js
 
+import { RenderTemples } from "./filtered-temples.js";
+
 // Function to update the current year
 function updateCurrentYear() {
     const currentYearElement = document.getElementById('currentYear');
@@ -19,3 +21,12 @@ function updateLastModified() {
 // Call the functions to update the dates
 updateCurrentYear();
 updateLastModified();
+//render temples
+async function getTemples() {
+    try {
+        const respons = await fetch("data/temples.json")
+        const data = await respons.json()
+        RenderTemples(data)
+    } catch (error) { console.log(error) }
+}
+getTemples()

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filtered Temples</title>
     <meta name="description" content="Album of Temple pictures done by Evenage Thelma Gorwa.">
     <meta name="author" content="Evenage Thelma Gorwa">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="http://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 800px)">
-    <script src="scripts/filtered-temples.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/javascripts.js" defer type="module"></script>
 </head>
+
 <body>
     <div id="content">
         <header>
@@ -42,243 +42,28 @@
         <main>
             <h2 id="title">Home</h2>
             <div id="temple-album">
-                <section class="imgbox flex">
-                    <h3>Aba Nigeria</h3>
-                    <p>
-                        <span clas="label">
-                            "location:"
-                            <span>Aba, Nigeria</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>2005, August, 7</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                            <span>11500 sq ft</span>
-                        </span>
-                    </p>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg" alt="Aba Nigeria Temple" loading="lazy" width="400" height="250">
-                </section>
-                <section class="imgBox flex">
-                    <h3>Manti Utah</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                            <span>Manti, Utah, United States</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>1888, May, 21</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                            <span>74792 sq ft</span>
-                        </span>
-                    </p>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg" alt="Manti-Utah Temple" loading="lazy" width="400" height="250">
-                </section>
-                <section class="imgBox flex">
-                    <h3>Payson Utah</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                            <span>Payson, Utah, United States </span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>2015, June, 7</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                            <span>96630 sq ft</span>
-                        </span>
-                    </p>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg" alt="Payson Utah Temple" loading="lazy" width="400" height="250">
-                </section>
-                <section class="imgBox flex">
-                    <h3>Yigo Guam</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                            <span>Yigo Guam </span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>2020, May, 2</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                            <span>6861 sq ft</span>
-                        </span>
-                    </p>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg" alt="Yigo Guam Temple" width="400" height="250">
-                </section>
-                <section class="imgBox flex">
-                    <h3>Washington D.C.</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                            <span>Kensington, Maryland, United States </span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>1974, November, 19</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                            <span>156558 sq ft</span>
-                        </span>
-                    </p>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg" alt="Washington DC Temple" width="400" height="250">
-                </section>
-                <section class="imgBox flex">
-                    <h3>Lima Peru</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                            <span>Liam, Peru</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>1986, January, 10</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                            <span>9600 sq ft</span>
-                        </span>
-                    </p>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg" alt="Lima Peru" width="400" height="250">
-                </section>
-                <section class="imgBox flex">
-                    <h3>Mexico City Mexico</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                             <span>Mexico City, Mexico</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>1983, December, 2</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                            <span>116642 sq ft</span>
-                        </span>
-                    </p>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg" alt="Mexico City Temple" width="400" height="250">
-                </section>
-                <section class="imgBox flex">
-                    <h3>Adelaide</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                            <span>South, Australia</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>2000, June, 15</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                            <span>10700 sq ft</span>
-                        </span>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/400x250/adelaide-australia-temple-lds-856093-wallpaper.jpg" alt="South Australia Temple" width="400" height="250">
-                </section>
-                    <section class="imgBox flex">
-                    <h3>Albuquerque New Mexico</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                            <span>New Mexico</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Dedicated:"
-                            <span>2000, March,5</span>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="label">
-                            "Size:"
-                        <span>34245 sq ft</span>
-                        </span>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/400x250/albuquerque-temple-lds-998219-wallpaper.jpg" alt="New Mexico Temple" width="400" height="250">
-                </section>
-                <section class="imgBox flex">
-                    <h3>Bentonville-Arkansas</h3>
-                    <p>
-                        <span class="label">
-                            "Location:"
-                        <span>Arkansas</span>
-                        <span>Arkansas</span>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="label">
-                                "Dedicated:"
-                                <span>2023, September, 17</span>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="label">
-                                "Size:"
-                                <span>25000 sq ft</span>
-                            </span>
-                    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bentonville-arkansas/400x400/34410870d7d011ed8402eeeeac1ec672bdc0ce45.jpeg" alt="Bentonville Arkansas Temple" width="400" height="250">
-                </section>
-        </div>
-    </main>
+            </div>
+        </main>
     </div>
     <footer>
         <p>
             <span id="currentYear">
-            <span class="highlight">"©2024"</span>
-        </span>
-         "🎄EVENAGE THELMA GORWA 🎄 ZIMBABWE 🎄"
+                <span class="highlight">"©2024"</span>
+            </span>
+            "🎄EVENAGE THELMA GORWA 🎄 ZIMBABWE 🎄"
         </p>
         <p>
+            <p id="demo"></p>
+
             "Last Modified"
-            <span id="lastModified">
-                <span class="highlight">09/07/2024 02:05:01</span>
-            </span>
+            <script>
+                const date = new Date(document.lastModified);
+                document.getElementById("demo").innerHTML = date;
+            </script>
+
         </p>
-    </footer> 
+    </footer>
 
 </body>
-</html>
 
-  
+</html>
