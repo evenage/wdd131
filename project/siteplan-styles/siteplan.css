@@ -138,6 +138,15 @@ a:hover {
     color: #002a80; /* Darker deep blue */
 }
 
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
