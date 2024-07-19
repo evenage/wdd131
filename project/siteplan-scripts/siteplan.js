@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', ()=> {
     const siteNameElement = document.getElementById('site-name');
-    siteNameElement.addEventListener('click', () => {
+    siteNameElement.addEventListener('click', ()=> {
         alert('Welcome to ArtSpace! Your gateway to the art world.');
     });
 });

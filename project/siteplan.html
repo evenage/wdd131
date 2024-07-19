@@ -22,7 +22,7 @@
                 <li><a href="artists.html">Artists</a></li>
                 <li><a href="artworks.html">Artworks</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="my profile">My profile</a></li>
+                <li><a href="my-profile">My profile</a></li>
                 <li><a href="wishlist">Wishlist</a></li>
             </ul>
         </nav>
@@ -70,28 +70,17 @@
             <p>The typography section of the planning document provides examples of the fonts to be used and where they
                 are to be applied.</p>
             <ul>
-                <li><strong>Heading Font:</strong> Arial, used for all headings.</li>
-                <li><strong>Body Font:</strong>Georgia, used for all body text.</li>
+                <li><strong>Heading Font:</strong> Roboto, used for all headings.</li>
+                <li><strong>Body Font:</strong>Roboto, used for all body text.</li>
             </ul>
         </section>
         <section>
             <h2>Color Schema</h2>
 
             <ul>
-                <li><strong>Primary Color:</strong>#3498DB (Deep Blue) used for:
-                    -Header background
-                    - Navigation menu
-                    - Call-to-action buttons
-                    - Accent lines and dividers
-                </li>
-                <li><strong>Secondary Color:</strong>#F7F7F7 (Light Gray)- Used for:
-                    - Background color for main content areas
-                    - Text color for paragraphs and descriptions
-                    - Hover effects for buttons and link</li>
-                <li><strong>Accent color:</strong>#FFC107 (Vibrant Orange) - Used for:
-                    - Highlights and featured artwork accents
-                    - Icons and graphics
-                    - Social media links and buttons</li>
+                <li><strong>Primary Color:</strong>#3498DB (Deep Blue)</li>
+                <li><strong>Secondary Color:</strong>#F7F7F7 (Light Gray)</li>
+                <li><strong>Accent color:</strong>#FFC107 (Vibrant Orange)</li>
             </ul>
         </section>
         <main>
@@ -107,10 +96,13 @@
             "🎄EVENAGE THELMA GORWA 🎄 ZIMBABWE 🎄"
         </p>
         <p>
-            "Last Modified"
-            <span id="lastModified">
-                <span class="highlight">09/07/2024 02:05:01</span>
-            </span>
+        <p id="demo"></p>
+
+        "Last Modified"
+        <script>
+            const date = new Date(document.lastModified);
+            document.getElementById("demo").innerHTML = date;
+        </script>
         </p>
 
     </footer>

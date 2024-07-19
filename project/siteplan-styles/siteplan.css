@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-    font-family: Georgia, Arial;
+    font-family: Roboto;
     background-color: var(--accent-color); 
-    color: #333;
+    color:var(--secondary-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,7 +20,7 @@ body {
 /* Header Styles */
 header {
     background-color: var(--primary-color);
-    color: black;
+    color: var(--secondary-color);
     text-align: center;
     padding: 10px 0;
 }
@@ -48,13 +48,11 @@ nav ul li a {
 /* Main Content Styles */
 .main {
     width: 100%;
-    background-color: #a2ee14;
     display: flex;
     justify-content: center;
 }
 
-.main img {
-    .main-image {
+.main img  {
         display: block;
         margin: auto;
         width: 100%;
@@ -63,16 +61,14 @@ nav ul li a {
 }
         
 
-}
-
 section {
     margin-bottom: 0;
 }
 
 /* Section Headings */
 section h2 {
-    font-family: Arial, sans-serif;
-    color: #0044cc; /* Deep blue */
+    font-family: "Roboto";
+    color: var(--primary-color);
     align-items: center;
 }
 
@@ -95,12 +91,12 @@ section ul li {
 
 /* Strong Tag Styles */
 section p strong {
-    color: #0044cc; /* Deep blue */
+    color: var(--primary-color);
 }
 
 /* Footer Styles */
 footer {
-    background-color: #1e5d5f; /* Custom teal */
+    background-color: var(--accent-color);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -113,7 +109,7 @@ footer {
 
 /* Button Styles */
 button {
-    background-color: #ff6600; /* Vibrant orange */
+    background-color: var(--accent-color);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -124,18 +120,18 @@ button {
 }
 
 button:hover {
-    background-color: #cc5200; /* Darker orange */
+    background-color: var(--accent-color);
 }
 
 /* Link Styles */
 a {
-    color: #0044cc; /* Deep blue */
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #002a80; /* Darker deep blue */
+    color: var(--primary-color);
 }
 
 
