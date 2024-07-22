@@ -18,6 +18,14 @@ function updateLastModified() {
     }
 }
 
+const currentTimeElement = document.getElementById("current-time");
+
+setInterval(() => {
+  const currentTime = new Date().toLocaleTimeString();
+  currentTimeElement.textContent = currentTime;
+}, 1000);
+
+
 // Call the functions to update the dates
 updateCurrentYear();
 updateLastModified();

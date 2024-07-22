@@ -19,17 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             name: "Amir Cairo",
             bio: 'An amazing contemporary artist known for abstract paintings.',
-            image: "artist 1.jpg"
+            image: "artist1.jpg"
         },
         {
             name: "Thelma",
             bio: "Specializes in modern sculpture and installations.",
-            image: "artist 2.jpg"
+            image: "artist2.jpg"
         },
         {
             name: "Nathaniel",
             bio: "A digital artist creating stunning visual effects.",
-            image: "artist 3.jpg"
+            image: "artist3.jpg"
         }
     ];
 
