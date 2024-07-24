@@ -1,17 +1,19 @@
 :root {
-    --primary-color:#0044cc; 
-    --secondary-color:#F7F7F7;
-    --accent-color:#ff6600;
+    --primary-color: #0044cc;
+    --secondary-color: #F7F7F7;
+    --accent-color: #ff6600;
 }
+
 /* Header Styles */
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 10px ;
+    padding: 10px;
     margin: auto;
     width: 60%;
 }
+
 header h1 {
     margin-bottom: 30px;
 }
@@ -24,65 +26,64 @@ header h1 {
 
 nav ul {
     list-style: none;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-right: 30px;
-    }
-    
-    nav ul li a {
-        color:var(--secondary-color);
-        text-decoration: none;
-    }
-    .open a {
-        display: block;
-    }
-    
-    /* Main Content Styles */
-    .main {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .main img  {
-            display: block;
-            margin: auto;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-    }
+}
 
-    .center {
-        margin: auto;
-        width: 60%;
-        border: 3px solid var(--accent-color);
-        padding: 10px;
-        text-align: center;
-        background-color: var(--accent-color);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
 
-    }
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
 
-    .center img {
-        margin-right: 20px;
-      }
-      
-      .center img:last-child {
-        margin-right: 0;
-      }
-      
+.open a {
+    display: block;
+}
+
+/* Main Content Styles */
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid var(--accent-color);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--accent-color);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center img {
+    margin-right: 20px;
+}
+
+.center img:last-child {
+    margin-right: 0;
+}
+
 
 
 footer {
     background-color: var(--accent-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 10px ;
+    padding: 10px;
     align-items: center;
     margin: auto;
     width: 60%;
@@ -91,17 +92,17 @@ footer {
 
 footer nav ul {
     display: flex;
-    margin:0;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
-footer nav li  {
+footer nav li {
     margin: 20px;
 }
 
-.footer-nav a{
+.footer-nav a {
     color: var(--secondary-color);
     text-decoration: none;
 }
@@ -129,7 +130,8 @@ form label {
     margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -150,11 +152,11 @@ form button:hover {
 }
 
 /* Wishlist Section */
-.wishlist{
+.wishlist {
     text-align: center;
 }
 
-.wishlist-container{
+.wishlist-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,7 +212,7 @@ form button:hover {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    
+
 }
 
 .artwork h2 {
@@ -224,14 +226,14 @@ form button:hover {
 
 /*artist css*/
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 80%;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
 
 
@@ -261,5 +263,3 @@ form button:hover {
         font-size: 1em;
     }
 }
- 
-

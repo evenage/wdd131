@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
             image: "artist1.jpg"
         },
         {
-            name: "Thelma",
+            name: "Thelma Fizdt",
             bio: "Specializes in modern sculpture and installations.",
             image: "artist2.jpg"
         },
         {
-            name: "Nathaniel",
+            name: "Nathaniel John",
             bio: "A digital artist creating stunning visual effects.",
             image: "artist3.jpg"
         }
