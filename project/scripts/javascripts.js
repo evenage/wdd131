@@ -25,21 +25,7 @@ setInterval(() => {
   currentTimeElement.textContent = currentTime;
 }, 1000);
 
-function openHomePage() {
-    windows.location.href="#home";
-}
 
-function openAboutPage() {
-    windows.location.href="#about";
-}
-
-function openContactPage() {
-    windows.location.href="#contact";
-}
-
-function openLoginPage() {
-    windows.location.href="#login";
-}
 
 // Call the functions to update the dates
 updateCurrentYear();

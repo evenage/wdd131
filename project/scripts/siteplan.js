@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
             wishlistItemInput.value = '';
         }
     });
-const currentYear= this.document.getElementById("current-year");
-const date= new Date();
-currentYear.textContent=
-date.getFullYear();
 
    
    // Artists Data
