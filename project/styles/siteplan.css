@@ -74,14 +74,13 @@ nav ul li a {
    
 }
 
-
 .card {
    margin: 0 10px;
    padding: 20px;
    height: auto;
    border: 1px solid #ddd;
    border-radius: 10px;
-   width: 33.33%  ;
+   width: 33.33% -20px  ;
 }
 
 .card-list .card-item {
