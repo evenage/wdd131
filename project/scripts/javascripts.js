@@ -1,6 +1,6 @@
 // getdates.js
 
-import { RenderArtwork } from "./siteplan.js";
+import { RenderSiteplan } from "./siteplan.js";
 
 // Function to update the current year
 function updateCurrentYear() {
@@ -25,16 +25,31 @@ setInterval(() => {
   currentTimeElement.textContent = currentTime;
 }, 1000);
 
+function openHomePage() {
+    windows.location.href="#home";
+}
+
+function openAboutPage() {
+    windows.location.href="#about";
+}
+
+function openContactPage() {
+    windows.location.href="#contact";
+}
+
+function openLoginPage() {
+    windows.location.href="#login";
+}
 
 // Call the functions to update the dates
 updateCurrentYear();
 updateLastModified();
-//render artwork
+//render siteplan
 async function getArtwork() {
     try {
-        const respons = await fetch("data/siteplan.json")
-        const data = await respons.json()
-        RenderArtwork(data)
+        const respons = await fetch("data/siteplan.js")
+        const data = await respons.js()
+        RenderSiteplan(data)
     } catch (error) { console.log(error) }
 }
-getArtwork()
+getSiteplan()

@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="styles/siteplan-large.css">
     <script src="scripts/javascripts.js" defer></script>
     <script src="scripts/siteplan.js" defer></script>
-    <link href="http://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,35 +36,80 @@
         </div>
     </header>
     <main>
-    <div class="center">
-       
-            <section>
-                <h2>Welcome to ArtSpace</h2>
-                <div>
-                    <img src="images/artwork1.jpg" alt="A girl" width="200" loading="lazy">
-                    <img src="images/artwork2.jpg" alt="Water and fire" width="200" loading="lazy">
-                    <img src="images/artwork3.jpg" alt="Temple" width="200" loading="lazy">
-                    <img src="images/artwork4.jpg" alt="A boy" width="200" loading="lazy">
+        <h2>Welcome to Our ArtSpace</h2>
+        <div>
+            <p>ArtSpace is an online art gallery showcasing a diverse collection of artworks from
+                emerging andestablished artists.The website will feature a user-friendly interface,
+                high-quality artwork images, artist
+                profiles, and e-commerce functionality for art sales.</p>
+        </div>
+        <section id="artists">
+            <h3>Artists</h3>
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="card-list ">
+                        <div class="card-item ">
+                            <img src="images/artist1.jpg" alt="user image" class="user-image" loading="lazy">
+                            <p class="user-name">Amir Cairo</p>
+                            <p class="user-profession"> Artist</p>
+                            <p>An amazing contemporary artist known for abstract paintings.</p>
+                            <button class="message-button">Message</button>
+                        </div>
+                        <div class="card-item">
+                            <img src="images/artist2.jpg" alt="user image" class="user-image" loading="lazy">
+                            <p class="user-name">Thelma Fizdt</p>
+                            <p class="user-profession"> Artist</p>
+                            <p>
+                            <p>Specializes in modern sculpture and installations.</p>
+                            <button class="message-button">Message</button>
+                        </div>
+                        <div class="card-item ">
+                            <img src="images/artist3.jpg" alt="user image" class="user-image" loading="lazy">
+                            <p class="user-name">Nathaniel John</p>
+                            <p class="user-profession"> Artist</p>
+                            <p>A digital artist creating stunning visual effects.</p>
+                            <button class="message-button">Message</button>
+                        </div>
+                    </div>
                 </div>
-                <p>ArtSpace is an online art gallery showcasing a diverse collection of artworks from emerging and
-                    established artists.
-                    The website will feature a user-friendly interface, high-quality artwork images, artist
-                    profiles,
-                    and e-commerce functionality for art sales.</p>
-            </section>
-            <section id="artists">
-                <h2> Artists</h2>
-                <div>
-                    <p>An amazing contemporary artist known for abstract paintings.</p>
-                    <img src="images/artist1.jpg" alt="Amir Cairo" width="200" loading="lazy">
-                    <p>Specializes in modern sculpture and installations.</p>
-                    <img src="images/artist2.jpg" alt="Thelma" width="200" loading="lazy">
+            </div>
+        </section>
+        <section id="artwork">
+            <h3>Artwork</h3>
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="card-list ">
+                        <div class="card-item ">
+                            <img src="images/artwork1.jpg" alt="user image" class="user-image" loading="lazy">
+                            <p class="user-name">A beautiful black girl</p>
+                            <p class="user-profession"> art painting</p>
+                            <p>This piece was done by Amir .</p>
+                            <button class="message-button">Shop</button>
+                        </div>
+                        <div class="card-item">
+                            <img src="images/artwork2.jpg" alt="user image" class="user-image" loading="lazy">
+                            <p class="user-name">Water & Fire</p>
+                            <p class="user-profession"> painting</p>
+                            <p> This was done by Thelma Fidzt</p>
+                            <button class="message-button">Shop</button>
+                        </div>
+                        <div class="card-item ">
+                            <img src="images/artwork3.jpg" alt="user image" class="user-image" loading="lazy">
+                            <p class="user-name">Temple</p>
+                            <p class="user-profession"> Art painting</p>
+                            <p>Done and dusted by Amir.</p>
+                            <button class="message-button">Shop</button>
+                        </div>
+                        <div class="card-item">
+                            <img src="images/artwork4.jpg" alt="user image" class="user-image" loading="lazy">
+                            <p class="user-name">A Man</p>
+                            <p class="user-profession"> great painting</p>
+                            <p>This is Nathaniels work.</p>
+                            <button class="message-button">Shop</button>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p>A digital artist creating stunning visual effects.</p>
-                    <img src="images/artist3.jpg" alt="Nathaniel" width="200" loading="lazy">
-                </div>
-            </section>
+            </div>
             <section id="about.html">
                 <h3>About Us</h3>
                 <p>ArtSpace is a platform dedicated to showcasing the best in contemporary art.
@@ -72,7 +120,7 @@
                     artwork images, artist profiles,
                     and e-commerce functionality for art sales</p>
             </section>
-
+            
             <section id="contact">
                 <h3>Contact Us</h3>
                 <form>
@@ -100,16 +148,12 @@
             <section id="faq">
                 <h5>Frequently Asked Questions</h5>
                 <div class="faq-item">
-                    <h2>What is ArtSpace?</h2>
+                    <p2>#What is ArtSpace?</p>
                     <p>ArtSpace is a platform for artists to showcase their work and connect with art enthusiasts.
                     </p>
-                </div>
-                <div>
-                    <p>How can I contact ArtSpace?</p>
+                    <p>#How can I contact ArtSpace?</p>
                     <p>You can reach us via the contact form in the Contact Us section.</p>
-                </div>
-                <div>
-                    <p>How do I create an account?</p>
+                    <p>#How do I create an account?</p>
                     <p>You can create an account by visiting the Login section and signing up with your details.</p>
                 </div>
             </section>
@@ -123,31 +167,34 @@
                 </form>
             </section>
     </div>
-    </main>
-    <footer>
-        <p>&copy;
-            <span id="currentYear">
-                <span class="highlight">"©2024"</span>
-            </span>
-            "🎄EVENAGE THELMA GORWA 🎄 ZIMBABWE 🎄"
-        </p>
-        <p id="demo">
 
-            "Last Modified"
-        </p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#login">Login</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#wishlist">Wishlist</a></li>
-                <li><a href="attributions.html">Attributions</a></li>
-            </ul>
-        </nav>
-    </footer>
-    <script src="scripts/siteplan.js"></script>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy;
+        <span id="currentYear">
+            <span class="highlight">"©2024"</span>
+        </span>
+        "🎄EVENAGE THELMA GORWA 🎄 ZIMBABWE 🎄"
+    </p>
+    <p id="demo">
+
+        "Last Modified"
+    </p>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#wishlist">Wishlist</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+    </nav>
+</footer>
+<script src="scripts/siteplan.js"></script>
 </body>
 
 </html>
